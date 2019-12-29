@@ -49,7 +49,6 @@ function checkLetter(button){
         const letterText = phraseLetters[i].textContent.toLowerCase();
         const buttonText = button.textContent.toLowerCase();
         if (letterText === buttonText){
-            phraseLetters[i].style.transition = '2s ease-out';
             phraseLetters[i].classList.add('show');
             correctLetter = letterText;
         }
@@ -107,7 +106,6 @@ retryButton.addEventListener('click', () => {
 // event listener for selecting letters. checks for a match. 
 // if miss, adds to missed count and reflects on the screen. checks for a win.
 qwerty.addEventListener('click', (e) => {
-    e.target.style.transition = '.5s';
     if (e.target.tagName === 'BUTTON'){
         const letterFound = checkLetter(e.target);
         if (letterFound === null){

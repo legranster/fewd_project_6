@@ -95,6 +95,7 @@ button {
 .show {
   color: #000;
   background-color: #76CE82;
+  transition: 2s ease-out;
 }
 
 /* Keyboard */
@@ -109,6 +110,7 @@ button {
   border-radius: 5px;
   font-size: var(--font-size-medium);
   color: #FFFFFF;
+  transition: 1s ease-out;
 }
 
 .btn__reset {
